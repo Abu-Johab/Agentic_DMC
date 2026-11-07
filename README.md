@@ -219,14 +219,3 @@ Report/
 - **Fixed Seeds**: `set_seed(42)` ensures identical PyTorch, NumPy, and Scikit-learn outputs across runs.
 - **Fail-Safe Fallbacks**: If Ollama is busy or offline, deterministic chemometric fallback rules engage automatically, ensuring the notebook never crashes or halts mid-run.
 
----
-
-## 📜 Citation & Academic Use
-```bibtex
-@article{bisporus_dmc_agentic_2026,
-  title={Autonomous Multi-Agent Chemometric Framework for Hyperspectral Dry Matter Content Prediction in Agaricus bisporus},
-  author={Thesis Author},
-  journal={Chemometrics and Intelligent Laboratory Systems},
-  year={2026}
-}
-```

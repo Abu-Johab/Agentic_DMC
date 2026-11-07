@@ -1,0 +1,72 @@
+{
+  "num_bands": 204,
+  "preprocessor_method": "snv_sg1",
+  "model_type": "CNNWrapper",
+  "eval_summary": {
+    "preprocessing_method": "snv_sg1",
+    "preprocessing_eval": {
+      "raw": {
+        "rmsecv": 0.14334111901073374,
+        "rmsev": 0.11777154040229276,
+        "best_lv": 10
+      },
+      "snv": {
+        "rmsecv": 0.15736900288423564,
+        "rmsev": 0.11519718379620092,
+        "best_lv": 10
+      },
+      "msc": {
+        "rmsecv": 0.15324001301910195,
+        "rmsev": 0.12098326191563247,
+        "best_lv": 10
+      },
+      "sg_smooth": {
+        "rmsecv": 0.14629479910711854,
+        "rmsev": 0.12804871200044002,
+        "best_lv": 10
+      },
+      "sg_deriv1": {
+        "rmsecv": 0.15407953872751262,
+        "rmsev": 0.12441895801928601,
+        "best_lv": 10
+      },
+      "snv_sg1": {
+        "rmsecv": 0.14814694653944738,
+        "rmsev": 0.12202821826314665,
+        "best_lv": 10
+      },
+      "msc_sg1": {
+        "rmsecv": 0.15046058711934307,
+        "rmsev": 0.12631459009792267,
+        "best_lv": 10
+      }
+    },
+    "model_name": "CNN1D",
+    "model_eval_summary": {
+      "PLSR": {
+        "rmsecv": 0.14814694653944738,
+        "rmsev": 0.12202821826314665,
+        "best_params": "{'n_components': 10}"
+      },
+      "SVR": {
+        "rmsecv": 0.13022291959802432,
+        "rmsev": 0.10138672011068722,
+        "best_params": "{'pca__n_components': 20, 'svr__C': 5.0, 'svr__epsilon': 0.03, 'svr__gamma': 0.001}"
+      },
+      "RandomForest": {
+        "rmsecv": 0.17319430643851574,
+        "rmsev": 0.14335490975178417,
+        "best_params": "{'max_depth': 8, 'max_features': 0.2, 'max_samples': 0.7, 'min_samples_leaf': 3}"
+      },
+      "CNN1D": {
+        "rmsecv": 0.07521384696013075,
+        "rmsev": 0.07521384696013075,
+        "best_params": "{'epochs_trained': 100, 'best_val_rmse': 0.07521384696013075}"
+      }
+    },
+    "selected_model_metrics": {
+      "rmsecv": 0.07521384696013075,
+      "rmsev": 0.07521384696013075
+    }
+  }
+}
